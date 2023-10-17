@@ -11,7 +11,7 @@ function App() {
     <div className="w-screen h-full flex flex-col">
       <Header></Header>
       <div className="hidden md:flex w-full h-full mt-1 p-2">
-        <div className='w-1/5 p-0 border-r-[1px] h-screen'>
+        <div className='w-1/5 p-0 border-r-[1px]'>
         <SideDrawer></SideDrawer>
         </div><div className='p-6 w-4/5'>
         {bankdetailsShow && <Form></Form>}</div>
