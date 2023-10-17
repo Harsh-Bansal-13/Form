@@ -62,7 +62,7 @@ const Form = () => {
             <input
               type="text"
               className={`w-full md:w-1/2 h-full bg-transparent outline-none border-[1px] p-1 text-base border-slate-200 placeholder:text-gray-400 text-textColor ${
-                isSubmit && "bg-green-1000"
+                isSubmit && "bg-green-100"
               }`}
               value={name}
               onChange={(e) => setname(e.target.value)}
