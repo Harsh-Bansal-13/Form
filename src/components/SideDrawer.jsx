@@ -3,12 +3,24 @@ import React, { useState } from "react";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
 const SideDrawer = () => {
-  const [{ sidebarShow }, dispatch] = useStateValue();
-  const [Tab, setTab] = useState("Mydashboard");
+  const [{ sidebarShow, bankdetailsShow }, dispatch] = useStateValue();
+  const [Tab, setTab] = useState("");
   const showSideBar = () => {
     dispatch({
       type: actionType.SET_SIDEBAR_SHOW,
       sidebarShow: !sidebarShow,
+    });
+  };
+  const showbankdetailsBar = () => {
+    dispatch({
+      type: actionType.SET_BANKDETAILS_SHOW,
+      bankdetailsShow: true,
+    });
+  };
+  const notshowbankdetails = () => {
+    dispatch({
+      type: actionType.SET_BANKDETAILS_SHOW,
+      bankdetailsShow: false,
     });
   };
   return (
@@ -22,6 +34,8 @@ const SideDrawer = () => {
         }`}
         onClick={() => {
           setTab("Mydashboard");
+          notshowbankdetails();
+          showSideBar();
         }}
       >
         <div>My DashBoard</div>
@@ -33,6 +47,8 @@ const SideDrawer = () => {
         }`}
         onClick={() => {
           setTab("2");
+          notshowbankdetails();
+          showSideBar();
         }}
       >
         <div>TOTM Links</div>
@@ -44,6 +60,8 @@ const SideDrawer = () => {
         }`}
         onClick={() => {
           setTab("Daily Work Summary");
+          notshowbankdetails();
+          showSideBar();
         }}
       >
         <div>Daily Work Summary</div>
@@ -55,6 +73,8 @@ const SideDrawer = () => {
         }`}
         onClick={() => {
           setTab("Update Bank Details");
+          showbankdetailsBar();
+          showSideBar();
         }}
       >
         <div>Update Bank Details</div>

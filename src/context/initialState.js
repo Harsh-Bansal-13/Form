@@ -1,4 +1,5 @@
 
 export const intialState={
-    sidebarShow:false
+    sidebarShow:false,
+    bankdetailsShow:false
 };
