@@ -29,7 +29,7 @@ const SideDrawer = () => {
         <i className="fi fi-rr-arrow-left"></i>
       </div>
       <div
-        className={`w-full m-0 h-10 flex justify-between p-6 border-y-[1px]  items-center hover:text-green-600 ${
+        className={`w-full m-0 h-fit flex justify-between p-2 border-y-[1px]  items-center hover:text-green-600 ${
           Tab === "Mydashboard" && "text-green-600"
         }`}
         onClick={() => {
@@ -38,11 +38,13 @@ const SideDrawer = () => {
           showSideBar();
         }}
       >
-        <div>My DashBoard</div>
+        <div>
+          <div>My DashBoard</div>
+        </div>
         <i className="fi fi-br-angle-small-right"></i>
       </div>
       <div
-        className={`w-full m-0 h-10 flex justify-between p-6 border-y-[1px]  items-center hover:text-green-600 ${
+        className={`w-full m-0 h-fit flex justify-between p-2 border-y-[1px]  items-center hover:text-green-600 ${
           Tab === "2" && "text-green-600"
         }`}
         onClick={() => {
@@ -51,11 +53,13 @@ const SideDrawer = () => {
           showSideBar();
         }}
       >
-        <div>TOTM Links</div>
+        <div>
+          <div>TOTM Links</div>
+        </div>
         <i className="fi fi-br-angle-small-right"></i>
       </div>
       <div
-        className={`w-full m-0 h-10 flex justify-between p-6 border-y-[1px]  items-center hover:text-green-600 ${
+        className={`w-full m-0 h-fit flex justify-between p-2 border-y-[1px]  items-center hover:text-green-600 object-c  ${
           Tab === "Daily Work Summary" && "text-green-600"
         }`}
         onClick={() => {
@@ -64,11 +68,14 @@ const SideDrawer = () => {
           showSideBar();
         }}
       >
-        <div>Daily Work Summary</div>
+        <div>
+          <div>Daily Work Summary </div>
+        </div>
+
         <i className="fi fi-br-angle-small-right"></i>
       </div>
       <div
-        className={`w-full m-0 h-10 flex justify-between p-6 border-y-[1px]  items-center hover:text-green-600 ${
+        className={`w-full m-0 h-fit flex justify-between p-2 border-y-[1px]  items-center hover:text-green-600 object-contain text-base  ${
           Tab === "Update Bank Details" && "text-green-600"
         }`}
         onClick={() => {
@@ -77,7 +84,9 @@ const SideDrawer = () => {
           showSideBar();
         }}
       >
-        <div>Update Bank Details</div>
+        <div>
+          <div>Update Bank Details</div>
+        </div>
         <i className="fi fi-br-angle-small-right"></i>
       </div>
     </div>

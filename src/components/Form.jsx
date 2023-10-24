@@ -62,7 +62,7 @@ const Form = () => {
             <input
               type="text"
               className={`w-full md:w-1/2 h-full bg-transparent outline-none border-[1px] p-1 text-base border-slate-200 placeholder:text-gray-400 text-textColor ${
-                isSubmit && "bg-green-100"
+                isSubmit && "bg-green-50"
               }`}
               value={name}
               onChange={(e) => setname(e.target.value)}
@@ -77,7 +77,7 @@ const Form = () => {
             <input
               type="text"
               className={`w-full md:w-1/2 h-full bg-transparent outline-none border-[1px] p-1 text-base border-slate-200 placeholder:text-gray-400 text-textColor ${
-                isSubmit && "bg-green-100"
+                isSubmit && "bg-green-50"
               }`}
               value={accno}
               onChange={(e) => setaccno(e.target.value)}
@@ -89,7 +89,7 @@ const Form = () => {
             <input
               type="text"
               className={`w-full md:w-1/2 h-full bg-transparent outline-none border-[1px] p-1 text-base border-slate-200 placeholder:text-gray-400 text-textColor ${
-                isSubmit && "bg-green-100"
+                isSubmit && "bg-green-50"
               }`}
               value={ifsc}
               onChange={(e) => setifsc(e.target.value)}
@@ -101,7 +101,7 @@ const Form = () => {
             <input
               type="text"
               className={`w-full md:w-1/2 h-full bg-transparent outline-none border-[1px] p-1 text-base border-slate-200 placeholder:text-gray-400 text-textColor ${
-                isSubmit && "bg-green-100"
+                isSubmit && "bg-green-50"
               }`}
               value={bankname}
               onChange={(e) => setbankname(e.target.value)}
@@ -113,7 +113,7 @@ const Form = () => {
             <input
               type="text"
               className={`w-full md:w-1/2 h-full bg-transparent outline-none border-[1px] p-1 text-base border-slate-200 placeholder:text-gray-400 text-textColor ${
-                isSubmit && "bg-green-100"
+                isSubmit && "bg-green-50"
               }`}
               value={bankcity}
               onChange={(e) => setbankcity(e.target.value)}
@@ -128,7 +128,7 @@ const Form = () => {
             <input
               type="text"
               className={`w-full md:w-1/2 h-full bg-transparent outline-none border-[1px] p-1 text-base border-slate-200 placeholder:text-gray-400 text-textColor ${
-                isSubmit && "bg-green-100"
+                isSubmit && "bg-green-50"
               }`}
               value={branchName}
               onChange={(e) => setbranchName(e.target.value)}
@@ -143,7 +143,7 @@ const Form = () => {
             <input
               type="text"
               className={`w-full md:w-1/2 h-full bg-transparent outline-none border-[1px] p-1 text-base border-slate-200 placeholder:text-gray-400 text-textColor ${
-                isSubmit && "bg-green-100"
+                isSubmit && "bg-green-50"
               }`}
               value={relation}
               onChange={(e) => setrelation(e.target.value)}
@@ -154,7 +154,7 @@ const Form = () => {
             <label className="font-bold text-base  md:w-1/2"> CONSENT</label>
             <div
               className={`w-full md:w-1/2 h-full bg-transparent outline-none border-[1px] p-1 text-base border-slate-200 placeholder:text-gray-400 text-textColor ${
-                isSubmit && "bg-green-100"
+                isSubmit && "bg-green-50"
               }`}
             >
               {!isSubmit && (
